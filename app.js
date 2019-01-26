@@ -69,9 +69,9 @@ function postData(event){
     } 
 
    fetch('http://localhost/post_request/index.php', options)
-      .then(response => {
+      .catch(response => {
          console.log(response)
          return response.text();
       })
-      .then(data => console.log(data));
+      .catch(data => console.log(data));
 }
